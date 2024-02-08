@@ -1,3 +1,4 @@
+// calculate money problems
 function calculateMoney(todaySell) {
   if (todaySell < 0) {
     return "Invalid Number";
@@ -9,6 +10,7 @@ function calculateMoney(todaySell) {
   return todayAmount;
 }
 
+// checkname problem
 function checkName(inputeName) {
   if (typeof inputeName === "string") {
     const reverseNum = inputeName.split("").reverse();
@@ -34,6 +36,7 @@ function checkName(inputeName) {
   }
 }
 
+// deleteinvalid problem
 function deleteInvalids(array) {
   if (Array.isArray(array)) {
     let newAray = [];
@@ -51,6 +54,7 @@ function deleteInvalids(array) {
   }
 }
 
+// password problem
 function password(pas) {
   const site = typeof pas.siteName;
   const name = typeof pas.name;
@@ -61,6 +65,7 @@ function password(pas) {
   }
 }
 
+// monthlysavings problem
 function monthlySavings(payment, livingCost) {
   let totalIncome = payment.reduce((acc, curr) => {
       if (curr >= 3000) {
